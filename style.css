@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins',sans-serif;
+    margin: 0 ;
 }
 
 .intro-text{
@@ -22,7 +23,8 @@ body{
     background-image:url(images/header_bg.png);
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-image: linear-gradient(rgb(244, 239, 239),white);
+    margin-bottom: 100px ;
 }
 
 .hardyImg{
@@ -41,14 +43,62 @@ body{
 .link{
     color:white;
     font-size:20px;
-    background-color: orange;
+    background-image: linear-gradient(orange,tomato);
     border-radius: 10px;
     padding: 10px 20px;
     text-decoration: none;
 
 }
 
-.heading{
-    display:inline;
-    
+.div-container2{
+    display: grid;
+    text-align:center;
+    background-color:rgba(255, 196, 0, 0.373);
+    margin-left: 150px ;
+    margin-right: 150px ;
+    margin-bottom: 60px;
+}
+.name{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end: 2 ;
+}
+
+.email{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end:3 ;
+}
+
+.aboutMe{
+    grid-row-start: 1;
+    grid-row-end: 2 ;
+    grid-column-start: 1;
+    grid-column-end: 5 ;
+    margin-bottom: 20px ;
+    padding-top: 60px ;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.location{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start: 4;
+    grid-column-end:5 ;
+}
+
+.specialty{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 100px;
+    font-size: small;
 }
